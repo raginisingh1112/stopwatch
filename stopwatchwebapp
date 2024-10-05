@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch Web App</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background: #f0f0f0;
+            color: #333;
+        }
+        .stopwatch-controls button {
+            background: #007bff;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#home">Stopwatch Web App</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="stopwatch-container">
+        <h1>Stopwatch Web App</h1>
+        <div class="stopwatch-display">
+            <span id="hours">00</span>:
+            <span id="minutes">00</span>:
+            <span id="seconds">00</span>:
+            <span id="milliseconds">00</span>
+        </div>
+        <div class="stopwatch-controls">
+            <button id="start-button">Start</button>
+            <button id="pause-button" disabled>Pause</button>
+            <button id="reset-button">Reset</button>
+            <button id="lap-button">Lap</button>
+        </div>
+        <div class="lap-times">
+            <h2>Lap Times</h2>
+            <ul id="lap-list"></ul>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2023 Stopwatch Web App. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
